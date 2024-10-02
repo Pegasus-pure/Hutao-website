@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hutao's Website</title>
+    <title>My Webpage</title>
+    <style>
+        .lang-en, .lang-zh {
+            display: none;
+        }
+    </style>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                document.querySelector('.lang-en').style.display = 'block';
+                document.querySelector('.lang-zh').style.display = 'none';
+            } else if (lang === 'zh') {
+                document.querySelector('.lang-en').style.display = 'none';
+                document.querySelector('.lang-zh').style.display = 'block';
+            }
+        }
+    </script>
 </head>
-<body>
-    <h1>Welcome to kick HutaoQAQ's ass</h1>
-    <p>This is for Hutao, Please check the file name before you download it</p>
-    
-    <!-- 添加超链接指向文档，并显示作者为HutaoQAQ -->
-    <p>Author: HutaoQAQ</p>
-    <p>File: Car Car</p>
-    <a href="https://github.com/Pegasus-pure/Hutao-website/raw/main/HutaoQWQ%2Bass1.docx" download>Click for downloading</a>
+<body onload="changeLanguage('en')">
+
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('zh')">中文</button>
+
+    <!-- 英文内容 -->
+    <div class="lang-en">
+        <h1>Welcome to HutaoQAQ's Assignment</h1>
+        <p>This is a dedicated webpage for Hutao's assignment.</p>
+        <p>Document author: HutaoQAQ</p>
+        <p>File: Car Car</p>
+        <a href="https://github.com/Pegasus-pure/Hutao-website/raw/main/HutaoQWQ%2Bass1.docx" download>Click here to download the document</a>
+    </div>
+
+    <!-- 中文内容 -->
+    <div class="lang-zh">
+        <h1>欢迎查看HutaoQAQ的作业</h1>
+        <p>这是专属于Hutao的作业网站。</p>
+        <p>文档作者: HutaoQAQ</p>
+        <p>文档名：车车</p>
+        <a href="https://github.com/Pegasus-pure/Hutao-website/raw/main/HutaoQWQ%2Bass1.docx" download>点击这里下载文档</a>
+    </div>
 
 </body>
 </html>
+
