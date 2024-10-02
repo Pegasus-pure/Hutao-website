@@ -4,6 +4,6 @@ This is a website for HutaoQAQ
 Please check your ass
 请检查你的屁屁
 
-Please download here
-请在这里下载：
-https://github.com/Pegasus-pure/Hutao-website/raw/main/HutaoQWQ%2Bass1.docx
+Please open the web here
+请在这里打开网页：
+https://pegasus-pure.github.io/Hutao-website
